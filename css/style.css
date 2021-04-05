@@ -9,10 +9,27 @@ h1 {
 .row {
   justify-content: space-around;
   display: flex;
+  width: 100%;
 }
 
-.column {
-  margin: 10px;
+.column1 {
+  margin: 5px;
+  padding-top: 100px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.column2 {
+  margin: 5px;
+  padding-top: 100px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.column3 {
+  margin: 5px;
+  padding-top: 100px;
+  border: 2px solid black;
   position: relative;
 }
 
@@ -20,36 +37,29 @@ h1 {
   background-color: rgb(211, 148, 53);
   padding: 40px 20px 20px 20px;
 }
-.dive1 {
-  position: relative;
-}
 
 .tag {
   position: absolute;
   top: 0px;
   right: 0px;
   background-color: rgb(158, 76, 18);
+  border-bottom: 2px solid rgb(241, 204, 135);
+  border-left: 2px solid rgb(241, 204, 135);
   width: 100px;
   height: 26px;
   padding: 10px 40px 25px 20px;
-  border: black 1px solid;
 }
 
-.beef {
-  background-color: rgb(5, 5, 5);
-  color: white;
-  width: 80px;
-  height: 26px;
-  padding: 10px 40px 25px 20px;
-  border: wheat 1px solid;
-}
-
-.sushi {
-  background-color: rgb(238, 219, 192);
-  width: 80px;
-  height: 26px;
-  padding: 10px 40px 25px 20px;
-  border: black 1px solid;
+@media (min-width: 768px) and (max-width: 991px) {
+  .column1,
+  .column2 {
+    float: left;
+    width: 50%;
+  }
+  .column3 {
+    clear: left;
+    width: 100px;
+  }
 }
 
 /*********Large Device *********/
