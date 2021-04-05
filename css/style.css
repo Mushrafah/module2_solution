@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.row {
+}
+
+.row > div {
+  background-color: rgb(211, 148, 53);
+  padding: 40px 20px 20px 20px;
+}
+.dive1 {
+  position: relative;
+}
+
+.chicken {
+  position: absolute;
+  top: 40px;
+  left: 1300px;
+  background-color: rgb(158, 76, 18);
+  width: 100px;
+  height: 26px;
+  padding: 10px 40px 25px 20px;
+  border: black 1px solid;
+}
+
+.beef {
+  background-color: rgb(5, 5, 5);
+  color: white;
+  width: 80px;
+  height: 26px;
+  padding: 10px 40px 25px 20px;
+  border: wheat 1px solid;
+}
+
+.sushi {
+  background-color: rgb(238, 219, 192);
+  width: 80px;
+  height: 26px;
+  padding: 10px 40px 25px 20px;
+  border: black 1px solid;
+}
+
+/*********Large Device *********/
+/*@media (min-width: 992px) {
+  .row > div {
+    width: 80%;
+    width: 100px;
+    height: 100px;
+  }
+}**/
+
+/******Medium screem******/
