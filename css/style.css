@@ -7,6 +7,13 @@ h1 {
 }
 
 .row {
+  justify-content: space-around;
+  display: flex;
+}
+
+.column {
+  margin: 10px;
+  position: relative;
 }
 
 .row > div {
@@ -17,10 +24,10 @@ h1 {
   position: relative;
 }
 
-.chicken {
+.tag {
   position: absolute;
-  top: 40px;
-  left: 1300px;
+  top: 0px;
+  right: 0px;
   background-color: rgb(158, 76, 18);
   width: 100px;
   height: 26px;
