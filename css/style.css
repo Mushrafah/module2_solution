@@ -28,6 +28,23 @@ h1 {
   position: relative;
 }
 
+.row > div {
+  background-color: rgb(211, 148, 53);
+  padding: 40px 20px 20px 20px;
+}
+
+.tag {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgb(158, 76, 18);
+  border-bottom: 2px solid rgb(241, 204, 135);
+  border-left: 2px solid rgb(241, 204, 135);
+  width: 100px;
+  height: 26px;
+  padding: 10px 40px 25px 20px;
+}
+
 @media screen and (max-width: 991px) {
   .column.one {
     flex-basis: 50%;
@@ -62,21 +79,4 @@ h1 {
     height: auto;
     justify-content: center;
   }
-}
-
-.row > div {
-  background-color: rgb(211, 148, 53);
-  padding: 40px 20px 20px 20px;
-}
-
-.tag {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  background-color: rgb(158, 76, 18);
-  border-bottom: 2px solid rgb(241, 204, 135);
-  border-left: 2px solid rgb(241, 204, 135);
-  width: 100px;
-  height: 26px;
-  padding: 10px 40px 25px 20px;
 }
