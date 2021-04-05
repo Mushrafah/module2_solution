@@ -7,30 +7,61 @@ h1 {
 }
 
 .row {
-  justify-content: space-around;
+  justify-content: space-evenly;
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
 }
 
-.column1 {
-  margin: 5px;
-  padding-top: 100px;
+.column {
+  width: 30%;
+  max-width: 30%;
+  height: auto;
+  border: solid 1px #333;
+  flex-basis: 30%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
   border: 2px solid black;
   position: relative;
 }
 
-.column2 {
-  margin: 5px;
-  padding-top: 100px;
-  border: 2px solid black;
-  position: relative;
+@media screen and (max-width: 991px) {
+  .column.one {
+    flex-basis: 50%;
+    max-width: 45%;
+    height: auto;
+    justify-content: center;
+  }
+  .column.two {
+    margin-left: 0;
+    margin-right: 0;
+    flex-basis: 50%;
+    max-width: 45%;
+    height: auto;
+    justify-content: center;
+  }
+  .column.three {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
 }
 
-.column3 {
-  margin: 5px;
-  padding-top: 100px;
-  border: 2px solid black;
-  position: relative;
+@media screen and (max-width: 767px) {
+  .column.one,
+  .column.two,
+  .column.three {
+    margin: 10px;
+    flex-basis: 100%;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+  }
 }
 
 .row > div {
@@ -49,26 +80,3 @@ h1 {
   height: 26px;
   padding: 10px 40px 25px 20px;
 }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .column1,
-  .column2 {
-    float: left;
-    width: 50%;
-  }
-  .column3 {
-    clear: left;
-    width: 100px;
-  }
-}
-
-/*********Large Device *********/
-/*@media (min-width: 992px) {
-  .row > div {
-    width: 80%;
-    width: 100px;
-    height: 100px;
-  }
-}**/
-
-/******Medium screem******/
